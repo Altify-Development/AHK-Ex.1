@@ -1,12 +1,12 @@
-;@Ahk2Exe-SetProp CompanyName Altify
-;@Ahk2Exe-SetProp Copyright © ALtify, LLC
-;@Ahk2Exe-SetProp Description Altify Speed Changing Example
-;@Ahk2Exe-SetProp FileVersion v1.2.1.3
-;@Ahk2Exe-SetProp InternalName Altify_LLC
-;@Ahk2Exe-SetProp Language ahk 
-;@Ahk2Exe-SetProp Name Speed Changer
-;@Ahk2Exe-SetProp ProductVersion v1.2
-;@Ahk2Exe-SetProp Version v1.2.1
+;@Ahk2Exe-Set Prop, CompanyName Altify
+;@Ahk2Exe-Set Prop, Copyright © ALtify, LLC
+;@Ahk2Exe-Set Prop, Description Altify Speed Changing Example
+;@Ahk2Exe-Set Prop, FileVersion v1.2.1.8
+;@Ahk2Exe-Set Prop, InternalName Altify_LLC
+;@Ahk2Exe-Set Prop, Language ahk 
+;@Ahk2Exe-Set Prop, Name Speed Changer
+;@Ahk2Exe-Set Prop, ProductVersion v1.2
+;@Ahk2Exe-Set Prop, Version v1.2.1
 #SingleInstance, Force ; Closes out all other running applications with the same directory of Ex.1.ahk
 SetBatchLines, -1 ; Sets the speed of the application for obvious reasons this is useful because it can dramatically affect the speed of a program
 Gui, Add, Text,, Speed Of File 1-5:
