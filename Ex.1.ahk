@@ -9,13 +9,13 @@ return  ; End of auto-execute section. The script is idle until the user does so
 GuiClose:
 ButtonOK:
 Gui, Submit  ; Save the input from the user to each control's associated variable.
-Speed *= 100 ; Multiplies the variable "Speed" by 100 
+Speed *= 1000 ; Multiplies the variable "Speed" by 100 
 SetBatchLines, %Speed% ; Sets the speed of the script to 100 times what the user chose as %Speed%
 Prog := 0 ; Creates the variable "Prog" and sets it to zero
+Progress, b w200, Example Download Using Progress, Progress, Download ; Creates a progress bar
 Loop, 100 ; Starts a loop, a loop in AHK is when the script reads the connecting } it will return to the origional { and will loop this until the number you chose is met
 {
 Prog += 1 ; Adds 1 to %Prog%
-Progress, b w200, Example Download Using Progress, Progress, Download ; Creates a progress bar
 Progress, %Prog% ; Set the position of the bar to the variable %Prog%.
 FileCreateDir, Examples ; Creates a file directory under the current working directory and names it "Examples"
 FileAppend,Number: %Prog%`nThis Example is brought to you by: Altify`nyou welcome, Examples/Example.%Prog%.txt ; Creates a text file under the folder "Examples" and writes the message inside of it
